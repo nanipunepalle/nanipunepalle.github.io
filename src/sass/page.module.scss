@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+.bio {
+    color: $custom-text-grey-primary-color;
+}
+
+.skills {
+    li p span {
+        color: $custom-text-grey-primary-color
+    }
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.timelineEvent {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timelineEvent:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: $custom-text-grey-primary-color;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}
+
+.timelineEvent:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: $custom-text-grey-primary-color;
+    left: 5px;
+    top: 12px;
+}
+
+.timelineEvent .timelineDate {
+    font-size: 14px;
+    color: $custom-text-grey-secondary-color;
+    margin-bottom: 5px;
+}
+
+.timelineEvent .timelineContent {
+    padding: 10px 20px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    li p {
+        color: $custom-text-grey-secondary-color;
+    }
+
+    .cgpa {
+        color: $custom-text-grey-secondary-color !important;
+    }
+}
+
+.timelineEvent .timelineContent h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+
+    span {
+        color: $custom-text-grey-primary-color
+    }
+}
+
+.timelineEvent .timelineContent p {
+    margin: 0;
+    font-size: 16px;
+    color: $custom-text-grey-primary-color;
+}

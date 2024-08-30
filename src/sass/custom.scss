@@ -1,0 +1,12 @@
+$body-bg: #1F2332;
+$body-color: #fff;
+
+@import "./variables.scss";
+
+$theme-colors: (
+  'primary': $custom-primary-color,
+  'secondary': $custom-secondary-color
+);
+
+
+@import "node_modules/bootstrap/scss/bootstrap";

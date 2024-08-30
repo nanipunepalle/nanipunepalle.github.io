@@ -1,0 +1,35 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ACTIONS_ALLOW_UNSECURE_COMMANDS
+        id: ACTIONS_ALLOW_UNSECURE_COMMANDS
+        run: echo 'ACTIONS_ALLOW_UNSECURE_COMMANDS=true' >> $GITHUB_ENV
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      
+      - uses: actions/setup-node@v3
+        with:
+          # update the Node version to meet your needs
+          node-version: 18
+          cache: npm
+
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: out
+          clean: true
