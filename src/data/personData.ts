@@ -96,7 +96,7 @@ const projectsData: ProjectsModel[] = [
   },
   {
     id: 6,
-    Name: "Butterfly Predection",
+    Name: "Butterfly Species Prediction",
     Description: "Flask Application to predict butterfly species",
     VisitUrl: "",
     LearnMoreUrl: "https://github.com/nanipunepalle/image-classification-using-CNN",

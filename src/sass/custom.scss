@@ -12,5 +12,6 @@ body {
   padding: 0px;
 }
 
+$thumbnail-border-color: $custom-primary-color;
 
 @import "node_modules/bootstrap/scss/bootstrap";
