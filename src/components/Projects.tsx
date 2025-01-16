@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectsModel } from "@/data/model/DataModel";
 import Image from "next/image"
+import styles from "../sass/projects.module.scss"
 
 interface ProjectsProps {
     projects: ProjectsModel[]
@@ -23,8 +24,8 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                                         <h5 className="card-title">{val.Name}</h5>
                                         <p className="card-text">{val.Description}</p>
                                         <div className="d-flex justify-content-between pt-2">
-                                            <a href={val.LearnMoreUrl} className="btn btn-sm btn-outline-primary">Learn More</a>
-                                            <a href={val.VisitUrl} className="btn btn-sm btn-link text-secondary">{"Visit ->"}</a>
+                                            <a href={val.LearnMoreUrl} aria-disabled="true" className={`btn btn-sm btn-outline-primary ${!val.LearnMoreUrl && styles.disabledLink}`}>Learn More</a>
+                                            <a href={val.VisitUrl} className={`btn btn-sm btn-link ${!val.VisitUrl ? styles.disabledLink : "text-secondary"}`}>{"Visit ->"}</a>
                                         </div>
                                     </div>
                                 </div>

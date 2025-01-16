@@ -29,19 +29,25 @@ export default function ProfileHeader(props: PersonalDataModel) {
                 <div className="flex-grow-1 order-md-1">
                     <h2>{props.Name}</h2>
                     <h6 className={styles.bio}>{props.Bio || ""}</h6>
-                    <div>
-                        <a className="d-flex flex-row gap-2 link-primary" href={`tel:${props.MobileNo}`}>
-                            <i className="bi bi-phone text-secondary"></i>
-                            <p>{props.MobileNo}</p>
-                        </a>
-                        <a className="d-flex flex-row gap-2 link-primary" href={`mailto:${props.Email}`}>
-                            <i className="bi bi-envelope text-secondary"></i>
-                            <p>{props.Email}</p>
-                        </a>
-                        <a className="d-flex flex-row gap-2 link-primary">
-                            <i className="bi bi-geo-alt text-secondary"></i>
-                            <p>{props.Address}</p>
-                        </a>
+                    <div >
+                        <div className="d-flex flex-row gap-2">
+                            <a className="d-flex align-items-center gap-2 link-primary" href={`tel:${props.MobileNo}`}>
+                                <i className="bi bi-phone text-secondary"></i>
+                                <p>{props.MobileNo}</p>
+                            </a>
+                        </div>
+                        <div className="d-flex flex-row gap-2">
+                            <a className="d-flex align-items-center gap-2 link-primary" href={`mailto:${props.Email}`}>
+                                <i className="bi bi-envelope text-secondary"></i>
+                                <p>{props.Email}</p>
+                            </a>
+                        </div>
+                        <div className="d-flex flex-row gap-2">
+                            <a className="d-flex align-items-center gap-2 link-primary">
+                                <i className="bi bi-geo-alt text-secondary"></i>
+                                <p>{props.Address}</p>
+                            </a>
+                        </div>
                     </div>
                     <div>
                         <a className="btn btn-primary btn-sm m-3" href={props.ResumeUrl} target="_blank">Resume <i className="bi bi-cloud-arrow-down"></i></a>

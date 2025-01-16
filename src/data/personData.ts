@@ -26,7 +26,7 @@ const educationData: EducationModel[] = [
     SchoolName: "Stony Brook University",
     CourseName: "Master of Science in Computer Science",
     Address: "Stony Brook, NY",
-    CGPA: "NA/4",
+    CGPA: "3.33/4",
     Coursework: ["Human Computer Interaction", "Data Science Fundamentals", "Introduction to computer vision"],
     StartAndEndDate: "AUG 2024 - DEC 2025",
     Picture: "education/SBU.png"
@@ -71,8 +71,8 @@ const projectsData: ProjectsModel[] = [
     id: 2,
     Name: "SnippetBook Web Application",
     Description: "Application to store and share code snippets",
-    VisitUrl: "https://github.com/nanipunepalle/snippet_book_server",
-    LearnMoreUrl: "",
+    VisitUrl: "https://snippet-book.web.app",
+    LearnMoreUrl: "https://github.com/nanipunepalle/snippet_book_server",
     Technologies: ["React.js", "flask", "MongoDB"],
     Picture: ""
   },
@@ -80,8 +80,8 @@ const projectsData: ProjectsModel[] = [
     id: 3,
     Name: "Mic iOS Application",
     Description: "Application to use iPhone as mic which tramsmits audio to connected devices, record your audio and also transcripts your audio to text",
-    VisitUrl: "https://github.com/nanipunepalle/Mic-iOS",
-    LearnMoreUrl: "",
+    VisitUrl: "",
+    LearnMoreUrl: "https://github.com/nanipunepalle/Mic-iOS",
     Technologies: ["Swift", "SwiftUI"],
     Picture: ''
   },
@@ -89,8 +89,8 @@ const projectsData: ProjectsModel[] = [
     id: 4,
     Name: "Speedo Meter iOS Application",
     Description: "iOS Application to know the speed of vehicle you are moving or your walking speed",
-    VisitUrl: "https://github.com/nanipunepalle/speedometer-iosapp",
-    LearnMoreUrl: "",
+    VisitUrl: "",
+    LearnMoreUrl: "https://github.com/nanipunepalle/speedometer-iosapp",
     Technologies: ["Swift", "SwiftUI"],
     Picture: ''
   },
@@ -98,8 +98,8 @@ const projectsData: ProjectsModel[] = [
     id: 6,
     Name: "Butterfly Predection",
     Description: "Flask Application to predict butterfly species",
-    VisitUrl: "https://github.com/nanipunepalle/image-classification-using-CNN",
-    LearnMoreUrl: "",
+    VisitUrl: "",
+    LearnMoreUrl: "https://github.com/nanipunepalle/image-classification-using-CNN",
     Technologies: ["Python", "Tensorflow", "Flask"],
     Picture: ''
   },

@@ -1,5 +1,5 @@
-$body-bg: #1E201E;
-$body-color: #fff;
+$body-bg: #ECEBDE;
+$body-color: #1E201E;
 
 @import "./variables.scss";
 
@@ -7,6 +7,10 @@ $theme-colors: (
   'primary': $custom-primary-color,
   'secondary': $custom-secondary-color
 );
+
+body {
+  padding: 0px;
+}
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
