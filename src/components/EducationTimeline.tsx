@@ -8,7 +8,7 @@ interface EducationProps {
 
 export default function EducationTimeline({ education }: EducationProps) {
     return (
-        <div id="education">
+        <section id="education">
             <h4 className="text-primary">{"<>Education</>"}</h4>
             <div className={styles.timeline}>
                 {
@@ -33,6 +33,6 @@ export default function EducationTimeline({ education }: EducationProps) {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }

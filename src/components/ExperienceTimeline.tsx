@@ -8,7 +8,7 @@ interface ExperienceProps {
 
 export default function ExperienceTimeline({ experience }: ExperienceProps) {
     return (
-        <div id="experience">
+        <section id="experience">
             <h4 className="text-primary">{"<>Work Experience</>"}</h4>
             <div className={styles.timeline}>
                 {
@@ -47,6 +47,6 @@ export default function ExperienceTimeline({ experience }: ExperienceProps) {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }

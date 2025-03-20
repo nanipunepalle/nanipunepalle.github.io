@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProfileHeader(props: PersonalDataModel) {
 
     return (
-        <>
+        <header>
             <div className="d-flex flex-row gap-2 align-items-center">
                 <p className="flex-shrink-0 text-primary">Portfolio</p>
                 <hr className="flex-grow-1"></hr>
@@ -54,6 +54,6 @@ export default function ProfileHeader(props: PersonalDataModel) {
                     </div>
                 </div>
             </div>
-        </>
+        </header>
     )
 }

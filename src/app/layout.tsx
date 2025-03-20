@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <Script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} container`}>{children}</body>
     </html>
   );
 }

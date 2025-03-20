@@ -9,8 +9,16 @@ $theme-colors: (
 );
 
 body {
-  padding: 0px;
+  padding: 10px;
 }
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 900px, // Set max-width for large screens
+  xl: 900px,
+  xxl: 900px
+);
 
 $thumbnail-border-color: $custom-primary-color;
 

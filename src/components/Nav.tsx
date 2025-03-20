@@ -1,6 +1,6 @@
 export default function Nav() {
     return (
-        <div className="navbar sticky-top justify-content-center bg-body">
+        <nav className="navbar sticky-top justify-content-center bg-body">
             <ul className="nav">
                 <li className="nav-item">
                     <a className="nav-link active link-primary" aria-current="page" href="#">Home</a>
@@ -18,6 +18,6 @@ export default function Nav() {
                     <a className="nav-link link-primary" href="#experience">Work Experience</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }

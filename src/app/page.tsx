@@ -14,10 +14,10 @@ import { Projects } from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="container" style={{ maxWidth: "900px" }}>
-      <div style={{ margin: '10px' }}>
-        <ProfileHeader {...data.personalData}></ProfileHeader>
-        <Nav></Nav>
+    <>
+      <ProfileHeader {...data.personalData}></ProfileHeader>
+      <Nav></Nav>
+      <main>
         <Skills {...data.skills}></Skills>
         <hr></hr>
         <Projects projects={data.projects}></Projects>
@@ -26,7 +26,7 @@ export default function Home() {
         <hr></hr>
         <ExperienceTimeline experience={data.experience}></ExperienceTimeline>
         <hr></hr>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }

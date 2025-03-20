@@ -9,7 +9,7 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     return (
-        <div id="projects">
+        <section id="projects">
             <h4 className="text-primary">{"<>Projects</>"}</h4>
             <div>
                 <div className="row" data-masonry='{"percentPosition": true }'>
@@ -34,6 +34,6 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
